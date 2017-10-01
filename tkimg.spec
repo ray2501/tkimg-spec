@@ -53,6 +53,8 @@ Files needed to compile/link C code against tkimg.
         --with-tcl=%_libdir \
         --with-tk=%_libdir
 make
+chmod a-x ANNOUNCE ChangeLog README Reorganization.Notes.txt
+chmod a-x changes license.terms doc/*.htm
 
 %check
 make test
