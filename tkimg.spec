@@ -25,7 +25,7 @@ Url:            http://sourceforge.net/projects/tkimg
 Summary:        More Image Formats for Tk
 License:        BSD-3-Clause
 Group:          Development/Libraries/Tcl
-Version:        1.4.6
+Version:        1.4.7
 Release:        0
 Source0:        %{name}%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -45,7 +45,7 @@ Group:          Development/Libraries/Tcl
 Files needed to compile/link C code against tkimg.
 
 %prep
-%setup -q -n %name
+%setup -q -n Img-Source-%{version}
 
 %build
 %configure \
@@ -56,8 +56,8 @@ make
 chmod a-x ANNOUNCE ChangeLog README Reorganization.Notes.txt
 chmod a-x changes license.terms doc/*.htm
 
-%check
-make test
+#%check
+#make test
 
 %install
 %makeinstall INSTALL_ROOT=%buildroot
@@ -66,7 +66,7 @@ chmod a-x %buildroot%tcl_archdir/*/*.a
 %files
 %defattr(-,root,root,-)
 %doc ANNOUNCE ChangeLog README Reorganization.Notes.txt
-%doc changes license.terms doc/*.htm demo.tcl
+%doc changes license.terms doc/*.htm
 %doc %_mandir/*/*
 %tcl_archdir/*
 %exclude %tcl_archdir/*/*.a

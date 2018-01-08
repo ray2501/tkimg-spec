@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "tkimg1.4.6"
-set fileurl "https://sourceforge.net/projects/tkimg/files/tkimg/1.4/tkimg%201.4.6/Img-Source-1.4.6.tar.gz"
+set base "tkimg1.4.7"
+set fileurl "https://sourceforge.net/projects/tkimg/files/tkimg/1.4/tkimg%201.4.7/Img-Source-1.4.7.tar.gz"
 
 set var [list wget $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
