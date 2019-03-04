@@ -25,7 +25,7 @@ Url:            http://sourceforge.net/projects/tkimg
 Summary:        More Image Formats for Tk
 License:        BSD-3-Clause
 Group:          Development/Libraries/Tcl
-Version:        1.4.7
+Version:        1.4.9
 Release:        0
 Source0:        %{name}%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -45,7 +45,7 @@ Group:          Development/Libraries/Tcl
 Files needed to compile/link C code against tkimg.
 
 %prep
-%setup -q -n Img-Source-%{version}
+%setup -q -n Img-%{version}
 
 %build
 %configure \
