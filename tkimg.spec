@@ -25,7 +25,7 @@ Url:            http://sourceforge.net/projects/tkimg
 Summary:        More Image Formats for Tk
 License:        BSD-3-Clause
 Group:          Development/Libraries/Tcl
-Version:        1.4.12
+Version:        1.4.13
 Release:        0
 Source0:        %{name}%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
